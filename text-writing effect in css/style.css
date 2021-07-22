@@ -1,0 +1,48 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background-color: black;
+    color: white;
+}
+.hero
+{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container
+{
+    display: flex;
+    flex-direction: row;
+    font-size: 1.8rem;
+}
+h2
+{
+    font-family: sans-serif;
+}
+/* for the animation we use the keyframes in css */
+p{
+    color: orangered;
+    font-family: monospace;
+    font-size: 2.5rem;
+}
+p span{
+    display: inline;
+    width: 3px;
+    position: relative;
+    margin-right: 0.1rem;
+}
+.typing{
+    border-right: 2px solid white;
+    animation: blink 0.5s infinite;
+}
+@keyframes blink {
+    0%{background-color: black;}
+    50%{background-color: transparent;}
+    100%{background-color:none;}
+}
